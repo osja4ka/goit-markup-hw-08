@@ -1,0 +1,70 @@
+.team {background-color: $lightGreyColor}
+.team-list {
+    display: flex;
+
+    .member-name{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
+    
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+}
+.member {
+    overflow: hidden;
+
+    width: 278px;
+    margin-right: 30px;
+
+    background-color: $onBackgroundTextColor;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);;
+   
+    &:last-child{
+        margin-right: 0px;
+    }
+
+    p {
+        margin-top: 10px;
+        margin-bottom: 16px;
+    
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $paragraphColor;
+    }
+}
+
+
+.social-networks {
+   display: flex;
+   justify-content: space-around;
+   padding-left: 32px;
+   padding-right: 32px;
+   padding-bottom: 24px;
+
+}
+
+.icon-background{
+    @include flex-content-center;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: #AFB1B8;
+
+
+    background-color: $onBackgroundTextColor;
+
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover{
+        background-color: $accentColor;
+        fill: $onBackgroundTextColor;
+    }
+}

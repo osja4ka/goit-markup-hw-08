@@ -1,0 +1,21 @@
+.logo {
+    margin-top: 24px;
+    margin-bottom: 25px;
+    margin-right: 80px;
+
+    color: $baseTextColor;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    
+    .web {color: $accentColor;}
+
+
+    
+    :hover,:focus {color: $paragraphColor;}
+
+}
+
+
