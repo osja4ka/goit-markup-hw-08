@@ -619,6 +619,20 @@ a {
 }
 
 @media (min-width: 480px) {
+  .clients {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .clients .client:not(:nth-child(2n)) {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .clients .client:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
   .clients-item {
     display: -webkit-box;
     display: -ms-flexbox;

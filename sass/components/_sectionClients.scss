@@ -1,8 +1,20 @@
 @media (min-width: 480px){
-  .clients {
   
+  .clients {
+    display: flex;
+    flex-wrap: wrap;
 
+    .client:not(:nth-child(2n))
+    {
+      margin-right: 30px;
+      margin-bottom: 30px;
+}
+.client:nth-last-child(-n + 2){
+  margin-bottom: 0;
+}
+    
   &-item {
+    
       @include flex-content-center;
       
       width: 210px;
