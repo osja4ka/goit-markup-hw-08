@@ -1,3 +1,9 @@
+@media (min-width: 480px){
+}
+@media (min-width: 768px){
+  }
+    
+  @media (min-width: 1200px){
 .clients {
     display: flex;
     justify-content: space-around;
@@ -19,5 +25,5 @@
     border-color: $accentColor;
     fill: $accentColor;
 }
-}
+}}
 

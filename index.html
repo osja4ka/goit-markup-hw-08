@@ -22,7 +22,7 @@
              </a>
           </div>
 <!--navigation-->
-          <ul class="site-nav list">
+          <!--<ul class="site-nav list">
             <li class="site-nav-item">
               <a href="./index.html" class="link current"> Студия</a>
             </li> 
@@ -36,7 +36,7 @@
         </nav>
   
 <!--Contacts-->
-        <address class="address">
+       <!-- <address class="address">
           <ul class="contacts list">
             <li class="item">
               <a class="contact-link" href="mailto:info@devstudio.com">
@@ -53,7 +53,7 @@
           </ul>
         </address>
       </header>
-    </div>
+    </div> -->
     <main>
 <!--hero-->
       <section class="hero">
@@ -68,10 +68,10 @@
 <!--advatages-->
       <section class="section liner">
         <div class="container"> 
-        <h2 class="advantages-title">преимущества</h2>
-          <ul class="advantages list">
-            <li class="advantages-item antena"> 
-              <div class="advantages-background">
+        <h2 class="advantage-title">преимущества</h2>
+          <ul class="advantage list">
+            <li class="advantage-item antena"> 
+              <div class="advantage-background">
                 <svg class="icon-antenna" width="70" height="70">
                   <use href="./images/sprite.svg#icon-antenna"></use>
                 </svg>
@@ -82,8 +82,8 @@
                 формированию позиции.
               </p>
             </li>
-            <li class="advantages-item clock">
-              <div class="advantages-background">
+            <li class="advantage-item clock">
+              <div class="advantage-background">
                 <svg class="icon-clock" width="70" height="70">
                   <use href="./images/sprite.svg#icon-clock"></use>
                 </svg>
@@ -94,8 +94,8 @@
                 влечет за собой.
               </p>
             </li>
-            <li class="advantages-item diagram">
-              <div class="advantages-background">
+            <li class="advantage-item diagram">
+              <div class="advantage-background">
                 <svg class="icon-pc" width="70" height="70">
                   <use href="./images/sprite.svg#icon-pc"></use>
                 </svg>
@@ -106,8 +106,8 @@
                 степени обуславливает.
               </p>
             </li>
-            <li class="advantages-item astronaut">
-              <div class="advantages-background">
+            <li class="advantage-item astronaut">
+              <div class="advantage-background">
                 <svg class="icon-astronaut" width="70" height="70">
                   <use href="./images/sprite.svg#icon-astronaut"></use>
                 </svg>
@@ -123,7 +123,7 @@
        
       </section>
 
-<!--specializing-->
+<!--specializing--><!--
       <section class="section">
        <div class="container">
         <h2 class="title">Чем мы занимаемся</h2>
@@ -153,7 +153,7 @@
           </li>
         </ul>
        </div>
-      </section>
+      </section>-->
 
 <!--team-->
       <section class="section team">
@@ -161,12 +161,22 @@
         <h2 class="title">Наша команда</h2>
         <ul class="team-list list">
           <li class="member">
-            <img
-              src="./images/team/john.jpg"
-              alt="рыжеволосый молодой парень с бородой. искренне улыбается"
-              width="270"
-            />
-            <h3 class="member-name">John Smith</h3>
+            <picture>
+              <source
+                srcset="./images/team/mob/john.jpg 1x, ./images/team/mob/john@2x.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <source
+                srcset="./images/team/tablet/john.jpg 1x, ./images/team/tablet/john@2x.jpg 2x"
+                media="(min-width:768px) and (max-width: 1199px)"
+              />
+              <source
+                srcset="./images/team/desktop/john.jpg 1x, ./images/team/desktop/john@2x.jpg 2x"
+                media="(min-width:1200px)"
+              />
+              <img src="./images/team/desktop/john.jpg" alt="фото Николая" />
+            </picture>
+            <h3 class="member-name">Николай Кучеренко</h3>
             <p>Product Designer</p>
             <ul class="social-networks list">
               <li>
@@ -192,12 +202,22 @@
             </ul>
           </li>
           <li class="member">
-            <img
-              src="./images/team/marta.jpg"
-              alt="молодая длинноволосая девушка. улыбается и показыват жест класс"
-              width="270"
-            />
-            <h3 class="member-name">Marta Stewart</h3>
+            <picture>
+              <source
+                srcset="./images/team/mob/marta.jpg 1x, ./images/team/mob/marta@2x.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <source
+                srcset="./images/team/tablet/marta.jpg 1x, ./images/team/tablet/marta@2x.jpg 2x"
+                media="(min-width:768px) and (max-width: 1199px)"
+              />
+              <source
+                srcset="./images/team/desktop/marta.jpg 1x, ./images/team/desktop/marta@2x.jpg 2x"
+                media="(min-width:1200px)"
+              />
+              <img src="./images/team/desktop/marta.jpg" alt="фото Ольги" />
+            </picture>
+            <h3 class="member-name">Ольга Иванова</h3>
             <p>Frontend Developer</p>
             <ul class="social-networks list">
               <li>
@@ -223,12 +243,22 @@
             </ul>
           </li>
           <li class="member">
-            <img
-              src="./images/team/robert.jpg"
-              alt="задумчивый парень"
-              width="270"
-            />
-            <h3 class="member-name">Robert Jakis</h3>
+            <picture>
+              <source
+                srcset="./images/team/mob/robert.jpg 1x, ./images/team/mob/robert@2x.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <source
+                srcset="./images/team/tablet/robert.jpg 1x, ./images/team/tablet/robert@2x.jpg 2x"
+                media="(min-width:768px) and (max-width: 1199px)"
+              />
+              <source
+                srcset="./images/team/desktop/robert.jpg 1x, ./images/team/desktop/robert@2x.jpg 2x"
+                media="(min-width:1200px)"
+              />
+              <img src="./images/team/desktop/robert.jpg" alt="фото Андрея" />
+            </picture>
+            <h3 class="member-name">Андрей Шевченко</h3>
             <p>Marketing</p>
             <ul class="social-networks list">
               <li>
@@ -254,12 +284,23 @@
             </ul>
           </li>
           <li class="member">
-            <img
-              src="./images/team/martin.jpg"
-              alt="парень с широкой улыбкой"
-              width="270"
-            />
-            <h3 class="member-name">Martin Doe</h3>
+            <picture>
+              <source
+                srcset="./images/team/mob/martin.jpg 1x, ./images/team/mob/martin@2x.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <source
+                srcset="./images/team/tablet/martin.jpg 1x, ./images/team/tablet/martin@2x.jpg 2x"
+                media="(min-width:768px) and (max-width: 1199px)"
+              />
+              <source
+                srcset="./images/team/desktop/martin.jpg 1x, ./images/team/desktop/martin@2x.jpg 2x"
+                media="(min-width:1200px)"
+              />
+              <img src="./images/team/desktop/martin.jpg" alt="фото Джона" />
+            </picture>
+            
+            <h3 class="member-name">Иван Николаев</h3>
             <p>UI Designer</p>
             <ul class="social-networks list">
               <li>
@@ -292,43 +333,43 @@
        <div class="container">
         <h2 class="title">Постоянные клиенты</h2>
         <ul class="clients list">
-          <li>
-            <a href="" class="clients-item">
+          <li class="clients-item">
+            <a href="" class="clients-logo">
               <!--width="44"-->
               <svg class="icon-logo" width="44">
                 <use href="./images/sprite.svg#icon-logo-one"></use> 
               </svg>
             </a>
           </li>
-          <li>
+          <li class="clients-item">
             <a href="" class="clients-item">
               <svg class="icon-logo" width="40">
                 <use href="./images/sprite.svg#icon-logo-two"></use> 
               </svg>
             </a>
           </li>
-          <li>
+          <li class="clients-item">
             <a href="" class="clients-item">
               <svg class="icon-logo" width="41">
                 <use href="./images/sprite.svg#icon-logo-three"></use> 
               </svg>
             </a>
           </li>
-          <li>
+          <li class="clients-item">
             <a href="" class="clients-item">
               <svg class="icon-logo" width="80">
                 <use href="./images/sprite.svg#icon-logo-four"></use> 
               </svg>
             </a>
           </li>
-          <li>
+          <li class="clients-item">
             <a href="" class="clients-item">
               <svg class="icon-logo" width="59">
                 <use href="./images/sprite.svg#icon-logo-five"></use> 
               </svg>
             </a>
           </li>
-          <li>
+          <li class="clients-item">
             <a href="" class="clients-item">
               <svg class="icon-logo" width="88">
                 <use href="./images/sprite.svg#icon-logo-six"></use> 

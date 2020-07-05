@@ -1,17 +1,35 @@
+
+
+@media (min-width: 480px){ 
+    .section{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    
+        .title{
+            color: $baseTextColor;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 1.18;
+            text-align: center;
+            letter-spacing: 0.03em;
+    
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+    }}
+    
+
+@media (min-width: 1200px){ 
 .section{
     padding-top: 94px;
     padding-bottom: 94px;
 
     .title{
-        color: $baseTextColor;
-        font-weight: bold;
+
         font-size: 36px;
         line-height: 1.16;
-        text-align: center;
-        letter-spacing: 0.03em;
 
-        margin-top: 0px;
         margin-bottom: 50px;
     }
-}
+}}
 
